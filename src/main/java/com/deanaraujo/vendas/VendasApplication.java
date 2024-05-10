@@ -9,15 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class VendasApplication {
-
-	@Value("${application.name}")
-	private String applicationName;
-
-	@GetMapping("/teste")
-	public String teste(){
-		return applicationName;
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(VendasApplication.class, args);
 	}
